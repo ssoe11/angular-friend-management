@@ -3,8 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-friend-management';
+  sidebaropen = false;
+  isExpanded = true;
+
+  sidebarToggler() {
+    this.sidebaropen = !this.sidebaropen;
+  }
 }

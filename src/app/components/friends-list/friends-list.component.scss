@@ -1,0 +1,17 @@
+.example-card {
+  max-width: 450px;
+  //display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //flex-direction: column;
+}
+
+.example-card mat-form-field {
+  display: flex;
+  //align-items: center;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+}

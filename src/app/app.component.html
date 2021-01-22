@@ -1,0 +1,9 @@
+<app-header (toggleSideNavEvent)="sidebarToggler()"></app-header>
+<mat-drawer-container autosize>
+  <mat-drawer mode="side" disableClose="true" [opened]="sidebaropen">
+    <app-sidebar [sidebaropen]="sidebaropen"></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
