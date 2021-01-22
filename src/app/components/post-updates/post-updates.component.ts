@@ -30,7 +30,7 @@ export class PostUpdatesComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onSubmitorm() {
+  onSubmitForm() {
     console.log(this.updateForm.value);
     this.fmService.postUpdates(this.updateForm.value).subscribe((res) => {
       if (res.message) {
