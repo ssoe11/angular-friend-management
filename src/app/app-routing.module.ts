@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AddAccountComponent } from './components/add-account/add-account.component';
 import { CommonFriendsComponent } from './components/common-friends/common-friends.component';
 import { FriendsListComponent } from './components/friends-list/friends-list.component';
 import { LinkUpFriendsComponent } from './components/link-up-friends/link-up-friends.component';
 import { PostUpdatesComponent } from './components/post-updates/post-updates.component';
 
 const routes: Routes = [
+  {
+    path: 'add-account',
+    component: AddAccountComponent,
+  },
   {
     path: 'link-up-friends',
     component: LinkUpFriendsComponent,
@@ -24,7 +29,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/post-updates',
+    redirectTo: '/add-account',
     pathMatch: 'full',
   },
 ];

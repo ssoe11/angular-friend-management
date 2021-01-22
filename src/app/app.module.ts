@@ -14,9 +14,10 @@ import { FriendsListComponent } from './components/friends-list/friends-list.com
 import { CommonFriendsComponent } from './components/common-friends/common-friends.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { PostUpdatesComponent } from './components/post-updates/post-updates.component';
+import { AddAccountComponent } from './components/add-account/add-account.component';
 
 @NgModule({
-  declarations: [AppComponent, LinkUpFriendsComponent, HeaderComponent, FriendsListComponent, CommonFriendsComponent, SidebarComponent, PostUpdatesComponent],
+  declarations: [AppComponent, LinkUpFriendsComponent, HeaderComponent, FriendsListComponent, CommonFriendsComponent, SidebarComponent, PostUpdatesComponent, AddAccountComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

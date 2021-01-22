@@ -11,6 +11,10 @@ const baseUrlPost = 'http://localhost:3000/post';
 export class FriendsManagementService {
   constructor(private http: HttpClient) {}
 
+  addUserAccount(data): Observable<any> {
+    return this.http.post(`${baseUrl}/add-account`, data);
+  }
+
   update(data): Observable<any> {
     return this.http.put(`${baseUrl}/link-up`, data);
   }

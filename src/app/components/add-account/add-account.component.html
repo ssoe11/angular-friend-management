@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+  <form [formGroup]="addAccountForm">
+    <mat-card-header>
+      <mat-card-title>Create New Account</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field>
+        <mat-label> Name</mat-label>
+        <input matInput formControlName="name" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Email </mat-label>
+        <input matInput email formControlName="email" required />
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button type="reset" color="accent">Clear</button>
+      <button
+        mat-raised-button
+        type="submit"
+        color="primary"
+        (click)="onSubmitForm()"
+        [disabled]="addAccountForm.invalid"
+      >
+        Create Account
+      </button>
+    </mat-card-actions>
+  </form>
+</mat-card>
